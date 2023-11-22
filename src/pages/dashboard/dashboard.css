@@ -1,0 +1,126 @@
+.container_body {
+  background: #f9fafb;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body_part1 {
+  display: flex;
+  height: 4rem;
+  width: 26rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0rem;
+}
+
+.open_api {
+  color: #262222;
+  font-family: "Poppins";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.auth_api {
+  color: #4f4f4f;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.body_part2 {
+  width: 31rem;
+  height: 16rem;
+  border: 1px solid #e4e7ec;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input_head {
+  width: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  color: #4f4f4f;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input_box {
+  color: rgba(79, 79, 79, 0.65);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  width: 25rem;
+  height: 3rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  background: #fafafa;
+  padding: 0rem 1rem;
+
+  &:focus {
+    color: #4f4f4f;
+    outline: none;
+  }
+}
+
+.submit_button {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 33px;
+  width: 25rem;
+  height: 2.7rem;
+  background: #395a96;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+}
+.error-message {
+color: var(--info-dark-text,  #395a96);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 143%;
+letter-spacing: 0.15px;
+  margin-top: 5px;
+  padding:10px;
+  border-radius: 4px;
+  background: var(
+    --error-light-bg,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 100%
+    ),
+    #f44336
+  );
+}

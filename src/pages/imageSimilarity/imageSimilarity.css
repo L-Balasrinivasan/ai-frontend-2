@@ -1,0 +1,234 @@
+.all_head_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btopic {
+  font-size: 24px;
+  font: " Poppins";
+  font-weight: 600;
+  text-align: center;
+  color: #262222;
+}
+.bsubtopic {
+  font-size: 13px;
+  font: " Poppins";
+  font-weight: 400;
+  text-align: center;
+  color: #4f4f4f;
+}
+.image-upload-container {
+  display: flex;
+  width: 75%;
+  height: 14rem;
+  gap: 60px;
+  justify-content: center;
+}
+.image-upload-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37rem;
+  height: 100%;
+  border-radius: 14px;
+  border: 1px dashed #0e4d9c;
+  background: #f3f6fb;
+  overflow: hidden;
+}
+.image-upload-box.uploaded {
+  background: none;
+  border: none !important;
+  border-radius: 14px;
+}
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imagelogo {
+  width: 40px;
+  height: 40px;
+}
+.limit_text {
+  color: #989aa0;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.blue-text {
+  color: #395a96;
+  text-decoration: underline;
+}
+.upload-text {
+  color: #4f4f4f;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview {
+  width: 100%;
+  height: 100%;
+}
+
+.label-range {
+  margin-bottom: 2rem;
+  color: #262222;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.form-range {
+  width: 100%;
+  height: 1rem;
+}
+.form-range::-webkit-slider-runnable-track {
+  height: 8px;
+  background-color: #d9d9d9;
+}
+
+.form-range::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background-color: #d0d2d4;
+  background-size: cover;
+  margin: none;
+  padding: none;
+  outline: none !important;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 2;
+}
+
+.form-range:focus,
+.form-range:active {
+  outline: none;
+  box-shadow: none;
+  
+}
+.form-range:focus::-webkit-slider-thumb {
+  background-color: #395a96;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-range:active::-webkit-slider-thumb {
+  background-color: #395a96;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+
+.submit_CS {
+  border-radius: 7px;
+  background: #395a96;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 20px;
+  margin: 1rem;
+}
+.range-label-min,
+.range-label-max {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #4f4f4f;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.range-label-max {
+  left: 100%;
+  transform: translateX(-50%);
+}
+.similarity_score {
+  color: #262222;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+  padding: 4rem 3rem;
+  margin-left: 2rem;
+}
+
+.range-overlay {
+  position: absolute;
+  top: 35px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background-color: #395A96;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;  
+  padding: 5px;
+  border-radius: 4px;
+  display: none;
+}
+
+.form-range:hover ~ .range-overlay {
+  display: block;
+}
+.similaritycheck{
+  
+justify-content: center;
+align-items:center;
+color: var(--info-dark-text,#395A96);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 143%; 
+letter-spacing: 0.15px;
+border-radius: 4px;
+}
+
+.similar-background {
+  background-color: #a5e6a7;
+}
+
+.not-similar-background {
+  background-color:#94c0e3;
+}

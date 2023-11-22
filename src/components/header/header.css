@@ -1,0 +1,29 @@
+
+
+.navbar .nav-link {
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin-right: 25px;
+}
+ 
+
+ @media (max-width: 990px) {
+  .navbar .nav-link {
+    margin-right: 10px;
+  }
+}
+
+.navbar .nav-link.active-link {
+  background-color: #395A96;
+  border-radius: 9px;
+  color: #FFFF;
+}
+.header_logo{
+  width:32px;
+  height:32px;
+}

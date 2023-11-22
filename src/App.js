@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/dashboard/Dashboard";
+import QaUrl from "./pages/qaurl/QaUrl";
+import ImageSimilarity from "./pages/imageSimilarity/ImageSimilarity";
+import AutoLocation from "./pages/autolocation/AutoLocation";
+import GeoLocation from "./pages/geolocation/GeoLocation";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+    <Routes>
+      <Route path="/" element={<Dashboard/>} />
+      <Route path="/image-similarity" element={<ImageSimilarity/>} />
+      <Route path="/auto-lr" element={<AutoLocation/>} />
+      <Route path="/geo-lt" element={<GeoLocation/>} />
+      <Route path="/qaurl" element={<QaUrl/>} />
+    </Routes>
+  </Router>  )
 }
 
-export default App;
+export default App
